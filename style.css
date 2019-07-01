@@ -5,6 +5,9 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
+body.dark {
+    background: #262626;
+}
 section {
     width: 100%;
     height: 100vh;
@@ -160,4 +163,22 @@ section.three::after {
     left: 0;
     transform-origin: left;
     transform: skewY(-5deg);
+}
+@media (max-width: 575.98px) {
+    section.one {
+        padding: 25px;
+    } 
+    section.content {
+        padding: 30px;
+    }
+    section.one h1 {
+        font-size: 3em;
+        margin: 70% 0 70px;
+    }
+    section.content h2, section.content.dark h2 {
+        font-size: 2em;
+    }
+    section.content p, section.content.dark p {
+        font-size: 1.1em;
+    }
 }
